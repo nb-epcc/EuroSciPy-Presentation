@@ -1,0 +1,51 @@
+/*
+ * CSS : local changes to override general theme
+ *
+ */
+
+p.small {
+   font-size: 0.75em;
+}
+
+p.headr {
+   font-size: 1.0em;
+   font-style: bold;
+}
+
+p.author {
+   font-size: 0.6em;
+   font-style: bold;
+}
+
+ul.inner {
+   font-size: 0.75em;
+}
+
+ul.med {
+   font-size: 0.85em;
+}
+
+ul.small {
+   font-size: 0.7em;
+}
+
+ul.verysmall {
+   font-size: 0.65em;
+}
+
+li {
+  margin: 0.7em 0;
+}
+
+div.rblock {
+   float: right;
+   display: block;
+   width: 49%;
+   font-size: 0.75em;
+}
+div.lblock {
+   float: left;
+   display: block;
+   width: 49%;
+   font-size: 0.75em
+}

@@ -1,0 +1,184 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+		<title>reveal.js</title>
+
+		<link rel="stylesheet" href="css/reveal.css">
+		<link rel="stylesheet" href="css/theme/white.css">
+                <link rel="stylesheet" href="css/local-override.css">
+
+		<!-- Theme used for syntax highlighting of code -->
+		<link rel="stylesheet" href="lib/css/zenburn.css">
+
+		<!-- Printing and PDF exports -->
+		<script>
+			var link = document.createElement( 'link' );
+			link.rel = 'stylesheet';
+			link.type = 'text/css';
+			link.href = window.location.search.match( /print-pdf/gi ) ? 'css/print/pdf.css' : 'css/print/paper.css';
+			document.getElementsByTagName( 'head' )[0].appendChild( link );
+		</script>
+	</head>
+	<body>
+		<div class="reveal">
+			<div class="slides">
+        <!-- PRESENTATION BEGINS HERE ------------------------------------------------------------------->
+	<section id="title"> 
+        	<img width="25%", height="25%", class="plain" src="img/euroscipylogo.png"/>
+                <p style="font-size: 2em", "bold">EuroSciPy</p>
+                <p>European Conference on Python in Science </p>
+                <p style="font-size: 0.75em"> Neelofer Banglawala</p>
+        </section>
+
+	<section id="overview">
+		<h3>EuroSciPy</h3>
+                <ul>
+			<li>Overview</li>
+			<li>Past talks</li> 
+			<li>EuroSciPy 2017</li>
+			<li> &rarr; Autoscaling distributed compute with Dask </li>
+			<li>Concluding remarks</li>
+		
+		</ul>
+	</section>
+
+	<section id="format">
+		<h3>EuroSciPy: overview</h3>
+		<p style="font-size: 0.75em">"cross-disciplinary gathering focused on the use and development of Python in scientific research"</p>
+                <ul class="med">
+			<li>European flavour of SciPy conference in US</li>
+			<li>First conference in 2008, Leipzig</li>
+                        <ul class="inner">
+				<li>Brussels, Paris, Cambridge, Erlangen</li>
+			</ul>
+                        <li>2 days of tutorials (beginner/advance tracks)</li>
+			<ul class="inner"> <li>numpy, matplotlib, pandas, scikit-learn...</li></ul>
+			<li>2 days of talks</li>
+                        <li>Poster session with lightning talks</li>
+			<li>1 day of sprints</li>
+                </ul>
+		<p></p> 
+	</section>
+
+	<section id="content-01">
+                <h3>EuroSciPy: past talks</h3>
+                <div class="lblock">
+			<p style="font-size: 0.75em"><b>Multicore, cluster, parallel computing</b></p>
+			<ul class="inner">
+				<li>PyFR: Heterogeneous Computing on Mixed Unstructured Grids <span style="color:grey">[F. Witherden, M. Klemm, P. Vincent, 2015]</b></li>
+                        	<li>Massively parallel pseudo-spectral DNS code for turbulent flows <span style="color:grey">[M. Mortensen, 2015]</span></li>	
+                        	<li>Cluster computing with Docker <span style="color:grey">[O. Grisel, 2016]</span></li>
+				<li>Tricks for efficient multicore computing <span style="color:grey">[O. Grisel, 2017]</span></li>
+			</ul>
+                </div>
+		<div class="rblock">
+			<p style="font-size: 0.75em"><b>Range of scientific disciplines</b></p>
+		 	<ul class="inner">
+				<li>Space mission design with Python <span style="color:grey">[H. Eichhorn, 2015]</span></li>
+				<li>Want drugs? Use Python <span style="color:grey">[M. Nowotka, 2015]</span></li>
+				<li>A global approach to muscle modeling with Python <span style="color:grey">[J. Laforet, 2016]</span></li>
+				<li>Real-time Crowd-sourced Detection of Earthquakes <span style="color:grey">[R. Steed, 2017]</span></li>
+                	</ul>
+		</div>
+
+	</section>
+
+        <section id="content-02">
+                <h3>EuroSciPy: past talks</h3>
+                <div class="lblock">
+			<p style="font-size: 0.75em;"><b>Data science and machine learning</b></p>
+                        <ul class="small">
+                                <li>Data cleaning on text to prepare for analysis and machine learning <span style="color:grey">[I. Osvald, 2015]</span></li>
+				<li>FluRS - A Library for Streaming Recommendation Algorithms <span style="color:grey">[T. Kitazawa, 2017]</span></li>
+                                <li>Deep Learning for Fraud Detection <span style="color:grey">[V. Maggio, 2017]</span></li>
+                        </ul>
+                        <p style="font-size: 0.75em"><b>Visualisation</b></p>
+                        <ul class="small">
+                                <li>Veusz: a scientific plotting package <span style="color:grey">[J. Sanders, 2016]</span></li>
+                                <li>Interactive 3D Visualization in Jupyter Notebooks <span style="color:grey">[V. T. Fauske, 2017]</span></li>
+                        </ul>
+                </div>
+                <div class="rblock">
+			<p style="font-size: 0.75em"><b>Memory, wrappers and compilers</b></p>
+                        <ul class="small">
+				<li>klepto: unified persistent storage to memory, disk, or database <span style="color:grey">[M. McKerns, 2015]</span></li>
+                                <li>AutoWIG: Wrapping very large C++ libraries in Python automatically <span style="color:grey">[P. Fernique, 2017]</span></li>
+                                <li>Introduction into the ppci project <span style="color:grey">[W. Bouwen, 2017]</span></li>
+			</ul>
+			<p style="font-size: 0.75em"><b>Jupyter Notebook tools</b></p>
+			<ul class="small">
+				<li>Nbdime - Notebook diffing and merging <span style="color:grey">[V. T. Fauske, 2016]</span></li>
+                                <li>nbval - Testing your notebooks <span style="color:grey">[T. Kluyver]</span></li>
+                        </ul>
+                </div>
+
+        </section>
+
+        <section id="2017">
+                <h3>EuroSciPy: 2017</h3>
+		<p style="font-size: 0.75em">10th conference, Erlangen (Germany)</p>
+		<img width="65%", height="65%", class="plain" src="img/euroscipyforest.jpg"/>
+        </section>
+
+        <section id="dask-01">
+                <h3>EuroSciPy: 2017</h3>
+		<p style="font-size: 0.8em"><b><a href="http://www.informaticslab.co.uk/dask/2017/07/21/adaptive-dask-clusters-on-kubernetes-and-aws.html">Autoscaling distributed compute with Dask</a></b></p>
+ 		<p style="font-size: 0.7em"> Jacob Tomlinson, Alex Hilson (Informatics Lab, MET Office)</p>
+		<div class="lblock">
+		<ul class="inner">
+			<li>Want faster scientific workflows</li>
+			<li>Avoid wasting cluster resources</li>
+			<li>Solution &rarr; <b>Adaptive clusters</b></li>
+			<ul>
+				<li><b><a href="https://dask.pydata.org/en/latest/">Dask</a></b> optimizes, parallelises and schedules tasks</li>
+				<li><b><a href="https://kubernetes.io/">Kubernetes</a></b> for deployment, scaling and management of containers</li>
+				<li><b><a href="https://aws.amazon.com/">Amazon Web Services</a> </b>provides scalable infrastructure </li>
+			</ul>
+		</ul>
+		</div>
+		<div class="rblock">
+		<img width="100%", height="100%", class="plain" src="img/daskcluster.png"/>
+		</div>
+
+        </section>
+
+        <section id="conclusion">
+                <h3>Concluding remarks</h3>
+		<ul class="inner">
+			<li>Interesting community, worth a visit from time to time</li>
+			<li>Archives: <a heref=https://www.euroscipy.org/>https://www.euroscipy.org/</a></li>
+		<li>Similar conferences: <a href=https://www.pycon.org/>https://www.pycon.org/</a></li>
+		</ul>
+		<p>Thank you for your attention!</p>
+        </section>
+
+        <section id="">
+                <h3></h3>
+                <p></p>
+        </section>
+
+			</div>
+		</div>
+
+		<script src="lib/js/head.min.js"></script>
+		<script src="js/reveal.js"></script>
+
+		<script>
+			// More info about config & dependencies:
+			// - https://github.com/hakimel/reveal.js#configuration
+			// - https://github.com/hakimel/reveal.js#dependencies
+			Reveal.initialize({
+				dependencies: [
+					{ src: 'plugin/markdown/marked.js' },
+					{ src: 'plugin/markdown/markdown.js' },
+					{ src: 'plugin/notes/notes.js', async: true },
+					{ src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } }
+				]
+			});
+			Reveal.configure({ controls: false })
+		</script>
+	</body>
+</html>
